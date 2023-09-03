@@ -1,0 +1,144 @@
+*{
+    margin: 0%;
+    height: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+   
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgb(239, 184, 147) 20%,rgb(239, 160, 232) 80%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.steps{
+    width: 530px;
+    height: auto;
+}
+.stepcount{
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+#num1,#num2,#num3{
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid rgb(3, 210, 3);
+    background-color: white; 
+    transition: all 1s;
+}
+#num1{
+    background-color: rgb(3, 210, 3);
+    color: white;
+}
+#sp1,#sp2{
+    width: 175px;
+    height: 5px;
+    transition: all .5s;
+    display: inline-flex;
+    background-color: white;
+}
+.steplabels{
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    
+}
+#form1,#form2{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 10px;
+    
+}
+.formheads{
+    height: 50px;
+    text-align: center;
+}
+.details{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.detail{
+    width: 200px;
+    height: 30px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    outline: none;
+}
+button{
+    height: 30px;
+    width: 100px;
+    border: 0px;
+    background-color: rgb(3, 210, 3);
+    color:white;
+    
+    
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#form3{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.formheads3{
+    height: 50px;
+    text-align: center;
+}
+.details3{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+textarea{
+    width: 200px;
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    outline: none;
+    resize: none;
+}

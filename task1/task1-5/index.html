@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="steps">
+            <div class="stepcount">
+                <div id="num1">1</div><span id="sp1"></span>
+                <div id="num2">2</div><span id="sp2"></span>
+                <div id="num3">3</div>
+            </div>
+            <div class="steplabels"><label>ACCOUNT SETUP</label><label>SOCIAL PROFILES</label><LAbel>PERSONAL
+                    DETAILS</LAbel></div>
+        </div>
+        <div class="form" id="form1">
+            <DIV class="formheads">
+                <label>CREATE YOUR ACCOUNT</label>
+                <p>This is step 1</p>
+            </DIV>
+            <div class="details">
+                <input class="detail" type="email" placeholder="Email" name="" id="">
+                <input class="detail"  type="password" placeholder="password" name="" id="">
+                <input class="detail"  type="password" placeholder="confirm password" name="" id="">
+                <button id="next1">Next</button>
+            </div>
+
+
+
+        </div>
+        <div class="form" id="form2">
+            <DIV class="formheads">
+                <label>SOCIAL PROFILES</label>
+                <p>Your presence on the social network</p>
+            </DIV>
+            <div class="details">
+                <input class="detail"  type="text" placeholder="Twitter" name="" id="">
+                <input class="detail"  type="text" placeholder="Facebook" name="" id="">
+                <input class="detail"  type="text" placeholder="Google plus" name="" id="">
+                <div class="btns"><button id="prev1">Previous</button><button id="next2">Next</button></div>
+                
+            </div>
+
+
+
+        </div>
+        <div class="form" id="form3">
+            <DIV class="formheads3">
+                <label>PERSONAL DETAILS</label>
+                <p>We will never sell it</p>
+            </DIV>
+            <div class="details3">
+                <input class="detail"  type="text" placeholder="First Name" name="" id="">
+                <input class="detail"  type="text" placeholder="Last Name" name="" id="">
+                <input class="detail"  type="text" placeholder="Phone" name="" id="">
+                <textarea placeholder="Address"></textarea>
+                <div class="btns"><button id="prev2">Previous</button><button>Submit</button></div>
+                
+            </div>
+
+
+
+        </div>
+    </div>
+    <script>
+        document.getElementById('form2').style.display = 'none'
+        document.getElementById('form3').style.display = 'none'
+        var next1 = document.getElementById('next1')
+        next1.addEventListener('click',()=>{
+            document.getElementById('form1').style.display = 'none'
+            document.getElementById('form2').style.display = 'block'
+            document.getElementById('sp1').style.backgroundColor = 'rgb(3, 210, 3)'
+            document.getElementById('num2').style.backgroundColor = 'rgb(3, 210, 3)'
+            document.getElementById('num2').style.color = 'white'
+        })
+        var  prev1 = document.getElementById('prev1')
+        prev1.addEventListener('click',()=>{
+            document.getElementById('form1').style.display = 'block'
+            document.getElementById('form2').style.display = 'none'
+            
+        })
+        var next2 = document.getElementById('next2')
+        next2.addEventListener('click',()=>{
+            document.getElementById('form1').style.display = 'none'
+            document.getElementById('form2').style.display = 'none'
+            document.getElementById('form3').style.display = 'block'
+            document.getElementById('sp2').style.backgroundColor = 'rgb(3, 210, 3)'
+            document.getElementById('num3').style.backgroundColor = 'rgb(3, 210, 3)'
+            document.getElementById('num3').style.color = 'white'
+        })
+        var  prev2 = document.getElementById('prev2')
+        prev2.addEventListener('click',()=>{
+            document.getElementById('form2').style.display = 'block'
+            document.getElementById('form3').style.display = 'none'
+            
+        })
+    </script>
+</body>
+
+</html>
