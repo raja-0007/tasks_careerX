@@ -1,0 +1,84 @@
+* {
+    /*font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto', sans-serif;*/
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(34, 31, 15);
+}
+
+.container {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.oneout,
+.twoout,
+.threeout,
+#four {
+    height: 30px;
+    width: 300px;
+    padding: 10px;
+    line-height: 30px;
+    padding-left: 20px;
+    background-color: rgb(216, 189, 53);
+    transition: all .5s;
+}
+
+.oneout,
+.twoout,
+.threeout {
+    border-bottom: 2px solid black;
+}
+.oneout:hover,
+.twoout:hover,
+.threeout:hover,
+#four:hover{
+    background-color: rgb(229, 204, 79);
+    
+}
+
+.in {
+    height: 30px;
+    width: 300px;
+    padding: 10px;
+    line-height: 30px;
+    padding-left: 20px;
+    color: rgb(196, 172, 52);
+    background-color: black;
+}
+
+.icon {
+    margin-right: 20px;
+}
+
+#onein,
+#twoin,
+#threein {
+    height: 0px;
+    
+    transition: all .5s;
+}
+@media screen and (max-width:799px){
+    .container {
+        margin-top: 30%;
+        
+    
+    }
+}
+@media screen and (max-width:599px){
+    .container {
+        margin-top: 50%;
+        
+    
+    }
+}

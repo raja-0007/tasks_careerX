@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        small {
+            position: absolute;
+            font-size: 15px;
+            top: 320px;
+            left: 710px;
+            color: rgb(87, 131, 87);
+
+        }
+        
+        body {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 700px;
+            font-size: 2em;
+        }
+
+        label {
+            background-color: rgb(87, 131, 87);
+            color: white;
+        }
+
+        span {
+            background-color: rgb(172, 108, 108);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>"A happy life is one spent in <label>learning</label><small>(correction)</small><span>learn</span>, earning, and
+        yearning."</p>
+
+    <script>
+        
+        var small = document.querySelector('small')
+        var span = document.querySelector('span')
+        var label = document.querySelector('label')
+        small.style.display = 'none'
+        span.style.display = 'none'
+        label.addEventListener("mouseover", () => {
+            small.style.display = 'inline'
+            span.style.display = 'inline'
+            label.style.marginRight = '10px'
+           
+        })
+        label.addEventListener("mouseleave", () => {
+            small.style.display = 'none'
+            span.style.display = 'none'
+            label.style.marginRight = '0px'
+                
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+        }
+        .login{
+            display: flex;
+            color: white;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 400px;
+            padding: 40px;
+            background-color: rgb(30, 30, 39);
+            border-radius: 15px;
+        }
+        .headings label{
+            font-size: 1.9em;
+        }
+        .details{
+            height: 250px;
+            display: flex;
+            padding-top: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        input[type='text'],input[type='email']{
+            outline: none;
+            border: 0px;
+            height: 40px;
+            border-radius: 10px;
+            padding-left: 20px;
+            background-color: rgb(76, 75, 75);
+        }
+        input[type='submit']{
+            outline: none;
+            border: 0px;
+            height: 30px;
+            border-radius: 10px;
+            background-color: rgb(94, 94, 228);
+            color: white;
+        }
+        .details #firstplace,#lastplace,#emailplace{
+            position: relative;
+            top: -34px;
+            left: 20px;
+            display: flex;
+            width: max-content;
+            color: gray;
+            
+            transition: all .5s;
+        }
+        #firstname:focus ~ #firstplace{
+            top: -54.5px;
+            background-color: rgb(30, 30, 39);
+            color: red;
+            font-size: .8em;
+            padding-left: 8px;
+            padding-right: 8px;
+            border-radius: 8px;
+        }
+        
+        #lastname:focus ~ #lastplace{
+            top: -54.5px;
+            background-color: rgb(30, 30, 39);
+            color: red;
+            font-size: .8em;
+            padding-left: 8px;
+            padding-right: 8px;
+            border-radius: 8px;
+        }
+        #email:focus ~ #emailplace{
+            top: -54.5px;
+            font-size: .8em;
+            background-color: rgb(30, 30, 39);
+            color: red;
+            padding-left: 8px;
+            padding-right: 8px;
+            border-radius: 8px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="headings">
+            <label>Welcome</label>
+            <p>Let's create your account</p>
+        </div>
+        <div class="details">
+            <input type="text" name="" id="firstname">
+            <label id="firstplace">First name</label>
+            <input type="text"  name="" id="lastname">
+            <label id="lastplace">Last name</label>
+            <input type="email"  name="" id="email">
+            <label id="emailplace">Email</label>
+            <input type="submit" name="" id="">
+        </div>
+    </div>
+</body>
+</html>
