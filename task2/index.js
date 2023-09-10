@@ -54,40 +54,14 @@ document.getElementById('start').addEventListener('click', function () {
     document.getElementById('container').style.display = 'block'
     document.getElementById('submit').style.display = 'none'
     document.getElementById('next').style.display = 'block'
-    /*document.getElementById('op1').style.backgroundColor = 'white'
-    document.getElementById('op2').style.backgroundColor = 'white'
-    document.getElementById('op3').style.backgroundColor = 'white'
-    document.getElementById('op4').style.backgroundColor = 'white'*/
+    
     document.getElementById('question').innerText = questions[qno].question
     document.getElementById('op1_txt').innerText = questions[qno].op1
     document.getElementById('op2_txt').innerText = questions[qno].op2
     document.getElementById('op3_txt').innerText = questions[qno].op3
     document.getElementById('op4_txt').innerText = questions[qno].op4
 })
-/*document.getElementById('op1').addEventListener('mouseover',function(){
-    document.getElementById('op1').style.backgroundColor = 'rgb(114, 169, 247)'
-    document.getElementById('op2').style.backgroundColor = 'white'
-    document.getElementById('op3').style.backgroundColor = 'white'
-    document.getElementById('op4').style.backgroundColor = 'white'
-})
-document.getElementById('op2').addEventListener('mouseover',function(){
-    document.getElementById('op2').style.backgroundColor = 'rgb(114, 169, 247)'
-    document.getElementById('op1').style.backgroundColor = 'white'
-    document.getElementById('op3').style.backgroundColor = 'white'
-    document.getElementById('op4').style.backgroundColor = 'white'
-})
-document.getElementById('op3').addEventListener('mouseover',function(){
-    document.getElementById('op3').style.backgroundColor = 'rgb(114, 169, 247)'
-    document.getElementById('op2').style.backgroundColor = 'white'
-    document.getElementById('op1').style.backgroundColor = 'white'
-    document.getElementById('op4').style.backgroundColor = 'white'
-})
-document.getElementById('op4').addEventListener('mouseover',function(){
-    document.getElementById('op4').style.backgroundColor = 'rgb(114, 169, 247)'
-    document.getElementById('op2').style.backgroundColor = 'white'
-    document.getElementById('op3').style.backgroundColor = 'white'
-    document.getElementById('op1').style.backgroundColor = 'white'
-})*/
+
 document.getElementById('next').addEventListener('click', function () {
     let answer = selected()
     if (answer) {
@@ -116,10 +90,7 @@ document.getElementById('next').addEventListener('click', function () {
     document.getElementById('op3_txt').innerText = questions[qno].op3
     document.getElementById('op4_txt').innerText = questions[qno].op4
     
-    /*document.getElementById('op1').style.backgroundColor = 'white'
-    document.getElementById('op2').style.backgroundColor = 'white'
-    document.getElementById('op3').style.backgroundColor = 'white'
-    document.getElementById('op4').style.backgroundColor = 'white'*/
+    
 })
 
 function selected() {
