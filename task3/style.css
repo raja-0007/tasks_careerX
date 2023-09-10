@@ -1,0 +1,74 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+body{
+    
+    background-image: linear-gradient(rgb(238, 252, 249) 10%,rgb(194, 255, 243) 90%);
+}
+.container{
+    
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.container header{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: larger;
+    color: rgb(112, 75, 1);
+}
+.process{
+    background-color: white;
+    
+    line-height: 25px;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: -10px 20px 50px  rgb(249, 236, 186);
+
+}
+.process h2{
+    padding: 20px;
+    font-weight: 540;
+    color: rgb(230, 53, 118);
+}
+.list1,.list2{
+    margin:0px 40px;
+    
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 241, 245);
+    background-image: linear-gradient(rgb(249, 236, 186) 10%,rgb(253, 215, 79) 90%);
+}
+.list1{
+    max-width: 50%;
+}
+.list2{
+    max-width: 90%;
+}
+.list1 li,.list2 li{
+    list-style-type: none;
+    margin: 20px 0px;
+    font-size: 1.1em;
+    color: rgb(11, 152, 167);
+    transition: all .2s;
+    width: fit-content;
+    
+}
+.list1 li:hover,.list2 li:hover{
+    color: rgb(235, 94, 42);
+    cursor: pointer;
+    transform: scale(0.95);
+    /*transform: skewX(10deg);*/
+    
+}
+.process footer{
+    text-align: center;
+    margin: 20px 0px;
+    color: rgb(230, 100, 53);
+}
+
