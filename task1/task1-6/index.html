@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="navlinks">
+        <table>
+            <tr>
+                <td><label onclick="demo('one')">Home</label></td>
+                <td><label onclick="demo('two')">Orders</label></td>
+                <td><label onclick="demo('three')">Services</label></td>
+                <td><label onclick="demo('four')">Profile</label></td>
+            </tr>
+            <tr>
+                <td class="dots"><label id="one"></label></td>
+                <td class="dots"><label id="two"></label></td>
+                <td class="dots"><label id="three"></label></td>
+                <td class="dots"><label id="four"></label></td>
+            </tr>
+        </table>
+        <!--<div class="dots"><label onclick="demo('one')">Home</label><label id="one"></label></div>
+        <div class="dots"><label onclick="demo('two')">Orders</label><label id="two"></label></div>
+        <div class="dots"><label onclick="demo('three')">Services</label><label id="three"></label></div>
+        <div class="dots"><label onclick="demo('four')">Profile</label><label id="four"></label></div></div>-->
+<script>
+    function demo(id){
+        document.getElementById('one').innerHTML = ''
+        document.getElementById('two').innerHTML = ''
+        document.getElementById('three').innerHTML = ''
+        document.getElementById('four').innerHTML = ''
+        document.getElementById(id).innerHTML = '.'
+        console.log(id)
+    }
+</script>
+</body>
+</html>

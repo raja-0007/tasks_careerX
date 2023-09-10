@@ -1,0 +1,38 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.navlinks{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+/*.dots{
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}*/
+td{
+    width: 100px;
+    text-align: center;
+    height: max-content;
+    
+}
+.dots{
+    width: 100px;
+    text-align: center;
+    height: 15px;
+    font-size: 10px;
+    
+}
