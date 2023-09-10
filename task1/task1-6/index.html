@@ -7,34 +7,33 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="navlinks">
-        <table>
-            <tr>
-                <td><label onclick="demo('one')">Home</label></td>
-                <td><label onclick="demo('two')">Orders</label></td>
-                <td><label onclick="demo('three')">Services</label></td>
-                <td><label onclick="demo('four')">Profile</label></td>
-            </tr>
-            <tr>
-                <td class="dots"><label id="one"></label></td>
-                <td class="dots"><label id="two"></label></td>
-                <td class="dots"><label id="three"></label></td>
-                <td class="dots"><label id="four"></label></td>
-            </tr>
-        </table>
-        <!--<div class="dots"><label onclick="demo('one')">Home</label><label id="one"></label></div>
-        <div class="dots"><label onclick="demo('two')">Orders</label><label id="two"></label></div>
-        <div class="dots"><label onclick="demo('three')">Services</label><label id="three"></label></div>
-        <div class="dots"><label onclick="demo('four')">Profile</label><label id="four"></label></div></div>-->
-<script>
-    function demo(id){
-        document.getElementById('one').innerHTML = ''
-        document.getElementById('two').innerHTML = ''
-        document.getElementById('three').innerHTML = ''
-        document.getElementById('four').innerHTML = ''
-        document.getElementById(id).innerHTML = '.'
-        console.log(id)
-    }
-</script>
+    <div class="container">
+        <div class="nav">
+            <a href="#" onclick="clicked(1)">Home</a>
+            <a href="#" onclick="clicked(2)">Orders</a>
+            <a href="#" onclick="clicked(3)">Services</a>
+            <a href="#" onclick="clicked(4)">Profile</a>
+        </div>
+        <div class="status">
+            <div class="dotstat"><div class="dot" id="dot1"></div></div>
+            <div class="dotstat"><div class="dot" id="dot2"></div></div>
+            <div class="dotstat"><div class="dot" id="dot3"></div></div>
+            <div class="dotstat"><div class="dot" id="dot4"></div></div>
+        </div>
+    </div>
+    <script>
+        var dots = document.querySelectorAll('.dot')
+        dots.forEach((dot)=>{
+            dot.style.display = 'none'
+        })
+        dots[0].style.display = 'block'
+        function clicked(n){
+            dots.forEach((dot)=>{
+            dot.style.display = 'none'
+        })
+            document.getElementById('dot'+n).style.display = 'block'
+        }
+
+    </script>
 </body>
 </html>
